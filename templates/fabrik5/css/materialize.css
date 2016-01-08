@@ -9072,4 +9072,32 @@ footer .collection .collection-item {
   border-right: 0;
   color: #546e7a; }
 
+.j2store .checkout-heading {
+  margin-bottom: 0; }
+
+.j2store .checkout-content.card-panel {
+  margin-top: 0;
+  padding-top: 15px; }
+
+#j2store-checkout select {
+  display: inherit; }
+
+#login h2 {
+  background: #fff url("../../../images/avatars/avatar-beard.png");
+  height: 80px;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: 80px;
+  padding-left: 100px;
+  line-height: 2.6em; }
+
+#login-register h2 {
+  background: #fff url("../../../images/avatars/avatar-bun.png");
+  height: 80px;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: 80px;
+  padding-left: 100px;
+  line-height: 2.6em; }
+
 /*# sourceMappingURL=materialize.css.map */

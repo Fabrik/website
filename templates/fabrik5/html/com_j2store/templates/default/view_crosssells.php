@@ -12,28 +12,28 @@ $columns = $this->params->get('item_related_product_columns', 3);
 $total = count($this->cross_sells); $counter = 0;
 ?>
 
-<div class="row-fluid product-crosssells-container">
-	<div class="span12">
+<div class="row product-crosssells-container">
+	<div class="col-xs-12">
 		<h3><?php echo JText::_('J2STORE_RELATED_PRODUCTS_CROSS_SELLS'); ?></h3>
-		
+
 				<?php foreach($this->cross_sells as $cross_sell_product):?>
 					<?php
-						
+
 						if(!empty($cross_sell_product->addtocart_text)) {
 							$cart_text = JText::_($cross_sell_product->addtocart_text);
 						} else {
 							$cart_text = JText::_('J2STORE_ADD_TO_CART');
 						}
-						
+
 					?>
-					
+
 					<?php $rowcount = ((int) $counter % (int) $columns) + 1; ?>
 					<?php if ($rowcount == 1) : ?>
 						<?php $row = $counter / $columns; ?>
-						<div class="crosssell-product-row <?php echo 'row-'.$row; ?> row-fluid">
+						<div class="crosssell-product-row <?php echo 'row-'.$row; ?> row-">
 					<?php endif;?>
-					
-					<div class="span<?php echo round((12 / $columns));?>">
+
+					<div class="col-sm-<?php echo round((12 / $columns));?>">
 						<span class="cross-sell-product-image">
 						<?php
 							$thumb_image = '';
@@ -78,6 +78,6 @@ $total = count($this->cross_sells); $counter = 0;
 					</div>
 				<?php endif; ?>
 
-			<?php endforeach;?>		
+			<?php endforeach;?>
 	</div>
 </div>

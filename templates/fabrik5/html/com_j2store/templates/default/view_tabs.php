@@ -9,8 +9,8 @@
 // No direct access
 defined('_JEXEC') or die;
 ?>
-	<div class="row-fluid">
-		<div class="span12">
+	<div class="row">
+		<div class="col-xs-12">
 			<ul class="nav nav-tabs" id="j2store-product-detail-tab">
 				<?php
 					$set_specification_active =true;

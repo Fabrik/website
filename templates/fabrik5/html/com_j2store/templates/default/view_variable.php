@@ -10,23 +10,23 @@
 defined('_JEXEC') or die;
 ?>
 <div itemscope itemtype="http://schema.org/Product" class="product-<?php echo $this->product->j2store_product_id; ?> <?php echo $this->product->product_type; ?>-product">
-	<div class="row-fluid">
-		<div class="span6">
+	<div class="row">
+		<div class="col-sm-6">
 			<?php echo $this->loadTemplate('images'); ?>
 		</div>
 
-		<div class="span6">
+		<div class="col-sm-6">
 			<?php echo $this->loadTemplate('title'); ?>
 			<?php if(isset($this->product->source->event->afterDisplayTitle)) : ?>
 				<?php echo $this->product->source->event->afterDisplayTitle; ?>
 			<?php endif;?>
 
-			<div class="price-sku-brand-container row-fluid">
-				<div class="span6">
+			<div class="price-sku-brand-container row">
+				<div class="col-sm-6">
 				<?php echo $this->loadTemplate('price'); ?>
 				</div>
 
-				<div class="span6">
+				<div class="col-sm-6">
 				<?php if(isset($this->product->source->event->beforeDisplayContent)) : ?>
 					<?php echo $this->product->source->event->beforeDisplayContent; ?>
 				<?php endif;?>
@@ -56,17 +56,17 @@ defined('_JEXEC') or die;
 			<?php endif;?>
 		</div>
 	</div>
-	
+
 	<?php if($this->params->get('item_use_tabs', 1)): ?>
 		<?php echo $this->loadTemplate('tabs'); ?>
 	<?php else: ?>
 		<?php echo $this->loadTemplate('notabs'); ?>
-	<?php endif; ?>	
+	<?php endif; ?>
 
 	<?php if(isset($this->product->source->event->afterDisplayContent)) : ?>
 		<?php echo $this->product->source->event->afterDisplayContent; ?>
 	<?php endif;?>
-</div>	
+</div>
 
 	<?php if($this->params->get('item_show_product_upsells', 0) && count($this->up_sells)): ?>
 			<?php echo $this->loadTemplate('upsells'); ?>
