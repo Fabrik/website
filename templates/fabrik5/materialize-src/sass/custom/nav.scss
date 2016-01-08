@@ -1,0 +1,192 @@
+html {
+  color : color("blue-grey", "darken-1");
+}
+
+nav .strapline {
+  position  : absolute;
+  top       : 17px;
+  font-size : 0.4em;
+  left      : 90px;
+  display : none;
+}
+
+body {
+  background : url(../../fabrik5/images/backgrounds/vichy-pink.png);
+}
+
+main {
+  padding-top : 0;
+}
+
+.brand-logo img {
+  height : 69px;
+  margin : 10px 0 0 10px;
+}
+
+
+
+article {
+  background-color : #fff;
+  padding          : 10px;
+}
+
+.alert {
+  background-color: $primary-color-dark;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+h4.alert-heading {
+  display:none;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert-message {
+
+}
+
+span.badge-secondary {
+  color: #fff;
+  background-color: $secondary-color;
+  border-radius: 2px;
+}
+
+.fabrikNav span.badge {
+  position: inherit;
+}
+.blog-blog .collection .collection-item.avatar,
+.item-page-blog .collection .collection-item.avatar {
+  min-height : inherit;
+}
+
+.blog-blog .collection {
+  border-left  : 0;
+  border-right : 0;
+  color        : color("blue-grey", "darken-1");
+}
+
+/** Home page **/
+
+.col-grow-vertical.hero .card {
+  background: #fff url('../../../images/network.jpg');
+  background-size: cover;
+  height: 309px;
+  background-position-x: 200px;
+  background-repeat: no-repeat;
+}
+.hero-unit {
+
+  h1 {
+    font-size: 3em;
+    width: 50%;
+    line-height: 4rem;
+  }
+
+  p {
+    width: 50%;
+  }
+
+  .btn {
+    margin-top: 35px;
+  }
+}
+
+
+.col-grow-vertical.support .card {
+  background: #fff url("../../../images/support.png");
+  height: 309px;
+  background-position-x: 200px;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position-y: 49px;
+
+  .btn {
+    margin-top: 35px;
+  }
+
+  p {
+    width: 40%;
+  }
+}
+
+/** Downloads **/
+
+.fabrikFilterContainer label {
+  position  : absolute;
+  top       : -14px;
+  font-size : 0.8rem;
+}
+
+.j2store-addtocart-form {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.j2store-product {
+  margin-top: 10px;
+}
+.product-price-container {
+  font-size: 1.3rem;
+}
+
+/** Footer **/
+
+footer {
+  color : #fff;
+}
+
+footer a {
+  color : #fff;
+}
+
+footer.page-footer .footer-copyright {
+  /*background-color : #8A4377;*/
+  background-color: $primary-color-dark;
+}
+
+footer hr {
+  border        : 1px solid;
+  border-bottom : 0;
+  border-color  : rgba(255, 255, 255, 0.4);
+}
+
+footer .collection, footer .collection-item,
+footer .collection .collection-item {
+  background : transparent;
+  border     : 0;
+}
+
+/** Cookie notice **/
+
+.activebar-container {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+
+  button {
+    float: right;
+    margin-left: 10px;
+    height: 20px;
+    line-height: 3px;
+    padding: 10px 10px;
+    font-size: 0.9rem;
+  }
+
+  p {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+.error-color {
+  background-color: $error-color;
+}
+
+.plg_system_eprivacy_accepted {
+  display: none !important;
+}
