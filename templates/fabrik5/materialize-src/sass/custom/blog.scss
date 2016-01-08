@@ -1,0 +1,17 @@
+
+/** Blog **/
+
+.fabrikNav span.badge {
+  position: inherit;
+}
+.blog-blog .collection .collection-item.avatar,
+.item-page-blog .collection .collection-item.avatar {
+  min-height : inherit;
+}
+
+.blog-blog .collection {
+  border-left  : 0;
+  border-right : 0;
+  color        : color("blue-grey", "darken-1");
+}
+

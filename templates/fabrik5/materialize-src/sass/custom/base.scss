@@ -1,0 +1,42 @@
+/** Base **/
+html {
+  color : $text-main;
+}
+
+body {
+  background : url(../../fabrik5/images/backgrounds/vichy-pink.png);
+}
+
+main {
+  padding-top : 0;
+}
+
+article {
+  background-color : #fff;
+  padding          : 10px;
+}
+
+span.badge {
+  border-radius: 2px;
+}
+
+span.badge-secondary {
+  color: #fff;
+  background-color: $secondary-color;
+}
+
+
+/** Alert/Notification **/
+.alert {
+  background-color: $primary-color-dark;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+h4.alert-heading {
+  display:none;
+}
+
+.alert p {
+  margin: 0;
+}

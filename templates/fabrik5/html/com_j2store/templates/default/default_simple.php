@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 ?>
 
 <?php echo $this->loadTemplate('images'); ?>
-<?php echo $this->loadTemplate('title'); ?>
+
 <?php if(isset($this->product->event->afterDisplayTitle)) : ?>
 		<?php echo $this->product->event->afterDisplayTitle; ?>
 <?php endif;?>

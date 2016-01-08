@@ -1,0 +1,26 @@
+/** Footer **/
+
+footer {
+  color : #fff;
+}
+
+footer a {
+  color : #fff;
+}
+
+footer.page-footer .footer-copyright {
+  /*background-color : #8A4377;*/
+  background-color: $primary-color-dark;
+}
+
+footer hr {
+  border        : 1px solid;
+  border-bottom : 0;
+  border-color  : rgba(255, 255, 255, 0.4);
+}
+
+footer .collection, footer .collection-item,
+footer .collection .collection-item {
+  background : transparent;
+  border     : 0;
+}

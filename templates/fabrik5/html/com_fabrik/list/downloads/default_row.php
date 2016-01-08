@@ -51,7 +51,6 @@ $rowClass = strstr($this->_row->class, 'sticky1') ? 'well' : '';
 			<?php }
 		} ?>
 	</div>
-	<pre><?php //print_r($d); ?></pre>
 	<div class="card-content">
 		<span class="card-title activator grey-text text-darken-4" itemprop="name">
 			<?php echo $title; ?>

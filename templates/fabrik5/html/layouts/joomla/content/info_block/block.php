@@ -57,7 +57,7 @@ $text = '';
 		) : ?>
 
 			<li class="collection-item avatar">
-
+				<?php echo $text;?>
 			</li>
 
 		<?php endif; ?>

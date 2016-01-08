@@ -44,10 +44,11 @@
 <!-- End of Google Website Optimizer Tracking Script -->
 
 <script>utmx_section("Layout")</script>
+{j2store}11|cart{/j2store}
 <form class="fabrikForm" action="<?php echo $this->table->action; ?>"
 	method="post" id="<?php echo $this->formid; ?>" name="fabrikTable">
 	<div class="page-header">
-		<h1>Subscribe</h1></div>
+		<h1>Support</h1></div>
 	<p>If you need support from the Fabrik team, you&apos;re
 		in the right place. Although Fabrik is (and always will be) free, we
 		offer a range of monthly and annual subscriptions where you can get the

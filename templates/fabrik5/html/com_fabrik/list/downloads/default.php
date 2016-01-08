@@ -50,7 +50,7 @@
 				foreach ($group as $this->_row) :
 					$items[] = $this->loadTemplate('row');
 			 	endforeach;
-			echo implode("\n", FabrikHelperHTML::bootstrapGrid($items, 2));
+			echo implode("\n", FabrikHelperHTML::bootstrapGrid($items, 2, 'col-grow-vertical'));
 			 	?>
 		</div>
 	<?php endforeach; ?>

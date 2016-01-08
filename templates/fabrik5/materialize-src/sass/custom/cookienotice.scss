@@ -1,0 +1,31 @@
+
+/** Cookie notice **/
+
+.activebar-container {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+
+  button {
+    float: right;
+    margin-left: 10px;
+    height: 20px;
+    line-height: 3px;
+    padding: 10px 10px;
+    font-size: 0.9rem;
+  }
+
+  p {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+.error-color {
+  background-color: $error-color;
+}
+
+.plg_system_eprivacy_accepted {
+  display: none !important;
+}

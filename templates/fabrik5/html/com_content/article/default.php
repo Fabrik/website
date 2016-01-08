@@ -28,7 +28,7 @@ $sideBar = ($canEdit || $params->get('show_print_icon') || $params->get('show_em
 <div class="item-page<?php echo $this->pageclass_sfx ?>">
 
 	<div class="row">
-		<div class="col s<?php echo $sideBar ? 8 : 12; ?>">
+		<div class="col-sm-<?php echo $sideBar ? 8 : 12; ?>">
 			<div class="card-panel large">
 				<div class="card-content">
 					<?php if ($this->params->get('show_page_heading', 1)) : ?>
@@ -121,7 +121,7 @@ $sideBar = ($canEdit || $params->get('show_print_icon') || $params->get('show_em
 		</div>
 
 		<?php if ($sideBar) : ?>
-			<div class="col s4">
+			<div class="col-sm-4">
 				<div class="card-panel">
 					<div class="card-content">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -134,6 +134,12 @@ $sideBar = ($canEdit || $params->get('show_print_icon') || $params->get('show_em
 						<script>
 							(adsbygoogle = window.adsbygoogle || []).push({});
 						</script>
+					</div>
+				</div>
+				<div class="card-panel">
+					<div class="card-title">Latest tweets</div>
+					<div class="card-content">
+						{module 105}
 					</div>
 				</div>
 			</div>

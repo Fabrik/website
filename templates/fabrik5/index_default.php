@@ -24,7 +24,6 @@
 			$q = $app->getMessageQueue();
 			if (!empty($q)) : ?>
 				<div class="alert">
-					<button type="button" class="close" data-dismiss="alert">×</button>
 					<jdoc:include type="message" />
 				</div>
 			<?php endif; ?>
@@ -99,14 +98,14 @@
 		<div class="modal-content">
 			<h4>Log in</h4>
 			<div class="row">
-				<div class="col s6" style="padding-top:65px">
+				<div class="col-sm-6" style="padding-top:65px">
 					<a href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>" class="modal-action waves-effect waves-red btn-flat">
 						Forgot your password?
 					</a><br>
 					<a href="<?php echo JRoute::_('index.php?option=com_users&view=remind'); ?>" class="modal-action waves-effect waves-red  btn-flat ">
 						Forgot your username?</a>
 				</div>
-				<div class="col s6">
+				<div class="col-sm-6">
 					<div class="input-field">
 						<input id="modlgn-username" type="text" name="username" class="validate" />
 						<label for="modlgn-username">Username</label>

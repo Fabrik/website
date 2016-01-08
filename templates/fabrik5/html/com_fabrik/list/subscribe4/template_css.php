@@ -131,17 +131,10 @@ echo ".subs{
 
 /** testimonials **/
 
-.testimonials blockquote p {
-	background-color: #FAFAE6;
-	border: 1px solid #E8E6AB;
-	border-radius: 5px 5px 5px 5px;
-	padding: 6px;
-	quotes: none;
-}
+
 
 .testimonials blockquote .author {
 	text-align: right;
-	color: 666;
 	margin: 7px 0 30px;
 	font-style: italic;
 }

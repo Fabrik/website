@@ -13,6 +13,3 @@ defined('_JEXEC') or die;
 	<div class="product-short-description"><?php echo $this->product->product_short_desc; ?></div>
 <?php endif; ?>
 
-<?php if($this->params->get('list_show_long_desc', 0)): ?>
-	<div class="product-short-description"><?php echo $this->product->product_long_desc; ?></div>
-<?php endif; ?>

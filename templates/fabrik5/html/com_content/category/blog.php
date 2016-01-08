@@ -14,7 +14,7 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 JHtml::_('behavior.caption');
 ?>
 <div class="row">
-	<div class="col s8">
+	<div class="col-xs-8">
 		<div class="blog<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="http://schema.org/Blog">
 			<?php if ($this->params->get('show_page_heading')) : ?>
 				<div class="page-header">
@@ -112,16 +112,16 @@ JHtml::_('behavior.caption');
 			<?php endif; ?>
 			<?php if (($this->params->def('show_pagination', 1) == 1 || ($this->params->get('show_pagination') == 2)) && ($this->pagination->get('pages.total') > 1)) : ?>
 				<div class="pagination">
-					<?php if ($this->params->def('show_pagination_results', 1)) : ?>
+				<?php if ($this->params->def('show_pagination_results', 1)) : ?>
 
 					<?php echo $this->pagination->getPaginationLinks(); ?> </div>
 
-					<?php endif; ?>
+				<?php endif; ?>
 
 			<?php endif; ?>
 		</div>
 	</div>
-	<div class="col s4">
+	<div class="col-xs-4">
 		<div class="card-panel">
 			<div class="card-content">
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -134,6 +134,12 @@ JHtml::_('behavior.caption');
 				<script>
 					(adsbygoogle = window.adsbygoogle || []).push({});
 				</script>
+			</div>
+		</div>
+		<div class="card-panel">
+			<div class="card-title">Latest tweets</div>
+			<div class="card-content">
+				{module 105}
 			</div>
 		</div>
 	</div>

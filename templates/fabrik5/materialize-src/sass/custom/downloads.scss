@@ -1,0 +1,30 @@
+
+/** Downloads **/
+
+.fabrikFilterContainer label {
+  position  : absolute;
+  top       : -14px;
+  font-size : 0.8rem;
+}
+
+.fabrikTable {
+  .j2store-addtocart-form {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .j2store-product {
+    margin-top: 10px;
+  }
+  .product-price-container {
+    font-size: 1.3rem;
+    height: 3rem;
+
+    .sale-price {
+      position: absolute;
+      bottom: 20px;
+      margin-top: 100px;
+    }
+  }
+}
