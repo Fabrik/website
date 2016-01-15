@@ -8,9 +8,19 @@
 
 defined('JPATH_BASE') or die;
 
-$d = $displayData;
+use Joomla\Utilities\ArrayHelper;
 
-$span = floor(12 / $d->columns);
+$d = $displayData;
+$responsive = array('col-xs-', 'col-sm-', 'col-md-', 'col-lg-');
+$d->columns = (array) $d->columns;
+$span = array();
+
+foreach ($d->columns as $i => $c) {
+	$span[] = ArrayHelper::getValue($responsive, $i) . floor(12 / $c);
+}
+
+$span = implode(' ', $span);
+
 $i    = 0;
 $grid = array();
 
@@ -21,21 +31,21 @@ foreach ($d->items as $i => $s)
 
 	if ($endLine)
 	{
-		$grid[] = '</div><!-- grid close row -->';
+		//$grid[] = '</div><!-- grid close row -->';
 	}
 
 	if ($newLine)
 	{
-		$grid[] = '<div class="row">';
+		//$grid[] = '<div class="row">';
 	}
 
-	$grid[] = '<div class="' . $d->spanClass . ' col-xs-' . $span . '">' . $s . '</div>';
+	$grid[] = '<div class="' . $d->spanClass . ' ' . $span . '">' . $s . '</div>';
 }
 
 if (!empty($d->items))
 {
 	// Close opened row, last row-fluid is always open if there's data
-	$grid[] = '</div><!-- grid close end row -->';
+	//$grid[] = '</div><!-- grid close end row -->';
 }
 
 echo implode("\n", $grid);

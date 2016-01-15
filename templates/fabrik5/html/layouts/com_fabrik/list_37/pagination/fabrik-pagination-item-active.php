@@ -36,7 +36,7 @@ if ($app->isAdmin()) :
 else :
 	?>
 
-	<span class="pagenav"><?php echo $text; ?></span>
+<a title="<?php echo $item->text; ?>" href="<?php echo $item->link; ?>" class="pagenav"><?php echo $text; ?></a>
 	<?php
 endif;
 

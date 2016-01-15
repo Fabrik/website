@@ -75,7 +75,7 @@ defined('_JEXEC') or die;
 				</h1>
 				<div class="row center-align">
 
-					<div class="col-sm-6 cart-empty-purchase-support">
+					<div class="col-sm-6 cart-empty-purchase-support col-grow-vertical">
 						<div class="card-panel">
 							<h2>
 								Looking for Pro Joomla! support?
@@ -86,10 +86,10 @@ defined('_JEXEC') or die;
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<div class="card-panel">
+					<div class="col-sm-6 col-grow-vertical">
+						<div class="card-panel" style="width:100%">
 							<h2>Need a funky Fabrik plugin?</h2>
-							<img src="images/plugin.jpg" alt="Download Fabrik plugins">
+							<img src="images/plugin.png" alt="Download Fabrik plugins"><br>
 							<a class="btn" href="<?php echo JRoute::_('index.php?Itemid=48'); ?>">
 								Browse over 100 plugins
 							</a>

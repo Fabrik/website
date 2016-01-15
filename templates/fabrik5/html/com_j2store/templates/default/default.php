@@ -12,6 +12,13 @@ $actionURL       = JRoute::_('index.php?option=com_j2store&view=products');
 $filter_position = $this->params->get('list_filter_position', 'right');
 
 ?>
+
+<?php if ($this->params->get('page_title', '') !== '') :?>
+<h1><?php echo $this->params->get('page_title');?></h1>
+<?php endif;?>
+<p class="floating-info">
+	<img src="images/support.png" alt="Get professional support">Heres the suppor deal.....
+</p>
 <div itemscope itemtype="http://schema.org/ItemList" class="j2store-product-list bs2">
 	<?php echo J2Store::modules()->loadposition('j2store-product-list-top'); ?>
 		<?php
@@ -31,7 +38,6 @@ $filter_position = $this->params->get('list_filter_position', 'right');
 		if ($this->params->get('list_show_filter', 0)): ?>
 		<div class="col-sm-9">
 			<?php else: ?>
-			<div class="col-sm-12">
 				<?php endif; ?>
 
 				<?php if ($this->params->get('list_show_top_filter', 1)): ?>
@@ -48,7 +54,7 @@ $filter_position = $this->params->get('list_filter_position', 'right');
 				<div class="row fabrikTable">
 					<?php foreach ($this->products as $product): ?>
 
-					<div class="col-grow-vertical col-sm-<?php echo round((12 / $col)); ?>">
+					<div class="col-grow-vertical col-xs-12 col-sm-<?php echo round((12 / $col)); ?>">
 
 						<?php $this->product = $product;
 						$this->product_link  = JRoute::_('index.php?option=com_j2store&view=product&id=' . $this->product->j2store_product_id);
@@ -127,7 +133,6 @@ $filter_position = $this->params->get('list_filter_position', 'right');
 					</div>
 				</div>
 			<?php endif; ?>
-			</div>
 
 			<?php
 			//make sure filter is enable

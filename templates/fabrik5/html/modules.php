@@ -27,20 +27,24 @@ function modChrome_bootstrap($module, &$params, &$attribs)
 function modChrome_material_card($module, &$params, &$attribs)
 {
 	if (!empty ($module->content)) :
-		$doc = new DOMDocument();
-		$doc->loadHTML($module->content);
-		$images = $doc->getElementsByTagName('img');
-		$i = 0;
+		$extractImage = ArrayHelper::getValue($attribs, 'extractimage', true);
 		$titleImage = '';
-		foreach ($images as $image) {
-			if ($i > 0 ) {
-				continue;
+		if ($extractImage) {
+			$doc = new DOMDocument();
+			$doc->loadHTML($module->content);
+			$images = $doc->getElementsByTagName('img');
+			$i = 0;
+
+			foreach ($images as $image) {
+				if ($i > 0 ) {
+					continue;
+				}
+				$titleImage = $doc->saveHTML($image);
+				$image->parentNode->removeChild($image);
+				$i ++;
 			}
-			$titleImage = $doc->saveHTML($image);
-			$image->parentNode->removeChild($image);
-			$i ++;
+			$module->content = $doc->saveHTML();
 		}
-		$module->content = $doc->saveHTML();
 
 		?>
 		<div class="col-grow-vertical <?php echo htmlspecialchars($params->get('moduleclass_sfx')) . ' ' . ArrayHelper::getValue($attribs, 'col'); ?>">

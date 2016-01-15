@@ -72,7 +72,8 @@ $rowClass = strstr($this->_row->class, 'sticky1') ? 'well' : '';
 		</div>
 	<div class="j2store-addtocart-form">
 		<div class="j2store-add-to-cart">
-			<a href="<?php echo JRoute::_('index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=355&formid=36&rowid=' . $d->downloads___id_raw . '&repeatcount=0');?>" class="btn btn-primary button">Free download</a>
+
+			<a href="<?php echo Juri::base(); ?>index.php?option=com_fabrik&task=plugin.pluginAjax&plugin=fileupload&method=ajax_download&format=raw&element_id=355&formid=36&rowid=<?php echo $d->downloads___id_raw;?>&repeatcount=0" class="btn btn-primary button">Free download</a>
 		</div></div>
 		<?php
 		}

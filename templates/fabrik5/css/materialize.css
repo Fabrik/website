@@ -8921,6 +8921,94 @@ h4.alert-heading {
 .alert p {
   margin: 0; }
 
+/** Forms **/
+fieldset {
+  border: 0px; }
+
+input[readonly] {
+  color: rgba(0, 0, 0, 0.26);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.26); }
+
+input.select-dropdown[readonly] {
+  color: #546e7a; }
+
+.hidden {
+  display: none; }
+
+.label {
+  border-radius: 2px;
+  padding: 2px 5px; }
+
+.label-inverse {
+  background-color: #cbcbcb; }
+
+.form-actions {
+  margin-top: 20px; }
+
+.control-group .controls {
+  margin-top: 30px; }
+
+.fabrikButtonsContainer {
+  margin-bottom: 10px; }
+
+table .fabrik_select {
+  display: none; }
+
+table th.fabrik_actions {
+  display: none; }
+
+.hover-menu {
+  width: 200px;
+  position: absolute;
+  margin-left: -100px;
+  margin-top: -10px; }
+  .hover-menu a {
+    padding: 0 5px;
+    font-size: 1.2rem;
+    color: #757575; }
+  .hover-menu a:hover {
+    color: #26a69a;
+    color: #616161; }
+
+.img-circle {
+  border-radius: 50%; }
+
+.fabrikForm label i {
+  float: right;
+  font-size: 0.8em;
+  color: #F44336;
+  margin-left: 4px; }
+.fabrikForm label.tooltipped {
+  border-bottom: 1px dotted #bbb; }
+.fabrikForm legend {
+  font-size: 1.6em;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-left: 10px; }
+
+.collection .title {
+  font-size: 1.1em; }
+
+p.floating-info {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  padding: 15px;
+  min-height: 90px; }
+  p.floating-info img {
+    float: left;
+    width: 65px; }
+
+/** contact us **/
+#group58 .groupintro {
+  background: #fff url("../../../images/contact-us.png");
+  background-position-x: 0;
+  min-height: 150px;
+  background-repeat: no-repeat;
+  padding-left: 170px;
+  line-height: 2.6em;
+  background-size: 140px;
+  padding-right: 20%; }
+
 /** Top menu **/
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
   line-height: 90px; }
@@ -8939,6 +9027,15 @@ nav .strapline {
 .brand-logo img {
   height: 69px;
   margin: 10px 0 0 10px; }
+  @media only screen and (max-width: 1200px) {
+    .brand-logo img {
+      height: 61px; } }
+  @media only screen and (max-width: 600px) {
+    .brand-logo img {
+      height: 44px; } }
+
+a.button-collapse {
+  margin-left: 10px; }
 
 nav span.badge {
   background-color: #fff;
@@ -9012,9 +9109,9 @@ footer .collection .collection-item {
 
 /** Downloads **/
 .fabrikFilterContainer label {
-  position: absolute;
-  top: -14px;
-  font-size: 0.8rem; }
+  /*position  : absolute;
+  top       : -14px;
+  font-size : 0.8rem;*/ }
 
 .fabrikTable .j2store-addtocart-form {
   position: absolute;
@@ -9030,34 +9127,102 @@ footer .collection .collection-item {
     bottom: 20px;
     margin-top: 100px; }
 
+@media only screen and (max-width: 992px) {
+  .pagination li {
+    padding: 0; } }
+
+@media only screen and (max-width: 992px) {
+  .pagination li i {
+    font-size: 1.5em; } }
+
 /** Home page **/
+.col-grow-vertical.hero .card .card-content {
+  background-image: linear-gradient(white, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0), rgba(255, 165, 0, 0)); }
+
 .col-grow-vertical.hero .card {
-  background: #fff url("../../../images/network.jpg");
-  background-size: cover;
-  height: 309px;
-  background-position-x: 200px;
-  background-repeat: no-repeat; }
+  background: #fff url("../../../images/network.png");
+  /*  height              : 309px;*/
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 50%; }
+  @media only screen and (max-width: 1400px) {
+    .col-grow-vertical.hero .card {
+      background-size: 50%;
+      background-position: center right; } }
+  @media only screen and (max-width: 510px) {
+    .col-grow-vertical.hero .card {
+      background-position-y: 120px; } }
+  @media only screen and (max-width: 600px) {
+    .col-grow-vertical.hero .card {
+      background-position-y: 131px;
+      background-size: 100%;
+      background-position-x: 20px; } }
+  @media only screen and (min-width: 1400px) {
+    .col-grow-vertical.hero .card {
+      min-height: 270px;
+      background-position: bottom right; } }
+
+#content-bottom-2 {
+  text-align: center; }
+  #content-bottom-2 img.img-circle {
+    width: 140px; }
+    @media only screen and (max-width: 600px) {
+      #content-bottom-2 img.img-circle {
+        width: 70px; } }
+  #content-bottom-2 .col-sm-4 {
+    margin-bottom: 10px; }
+
+.card h1 {
+  margin-top: 0; }
 
 .hero-unit h1 {
-  font-size: 3em;
   width: 50%;
-  line-height: 4rem; }
+    /*font-size: 3em;
+    line-height: 4rem;
+*/ }
+  @media only screen and (min-width: 1400px) {
+    .hero-unit h1 {
+      width: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .hero-unit h1 {
+      width: 100%; } }
 .hero-unit p {
   width: 50%; }
+  @media only screen and (min-width: 1400px) {
+    .hero-unit p {
+      width: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .hero-unit p {
+      width: 100%; } }
+  @media only screen and (min-width: 1400px) {
+    .hero-unit p {
+      width: 50%; } }
 .hero-unit .btn, .hero-unit .btn-large {
   margin-top: 35px; }
 
 .col-grow-vertical.support .card {
   background: #fff url("../../../images/support.png");
-  height: 309px;
-  background-position-x: 200px;
+  /*  height                : 309px;*/
+  background-position-x: 180%;
   background-repeat: no-repeat;
-  background-size: 75%;
-  background-position-y: 49px; }
+  background-size: 66%;
+  background-position-y: 61px; }
+  @media only screen and (max-width: 992px) {
+    .col-grow-vertical.support .card {
+      /* height                : 230px;
+       background-position-x : 90%;
+       background-size       : 37%;
+       background-position-y : center;*/
+      background-size: 36%;
+      background-position-x: 90%;
+      background-position-y: 72%; } }
   .col-grow-vertical.support .card .btn, .col-grow-vertical.support .card .btn-large {
     margin-top: 35px; }
   .col-grow-vertical.support .card p {
-    width: 40%; }
+    width: 80%; }
+    @media only screen and (max-width: 600px) {
+      .col-grow-vertical.support .card p {
+        width: 50%; } }
 
 /** Blog **/
 .fabrikNav span.badge {
@@ -9093,6 +9258,15 @@ footer .collection .collection-item {
 
 #login-register h2 {
   background: #fff url("../../../images/avatars/avatar-bun.png");
+  height: 80px;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: 80px;
+  padding-left: 100px;
+  line-height: 2.6em; }
+
+.profile-edit h2 {
+  background: #fff url("../../../images/avatars/avatar-beard.png");
   height: 80px;
   background-position-x: 0;
   background-repeat: no-repeat;

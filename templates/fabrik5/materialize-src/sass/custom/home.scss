@@ -1,44 +1,126 @@
-
 /** Home page **/
 
-.col-grow-vertical.hero .card {
-  background: #fff url('../../../images/network.jpg');
-  background-size: cover;
-  height: 309px;
-  background-position-x: 200px;
-  background-repeat: no-repeat;
+.col-grow-vertical.hero .card .card-content {
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255,165,0,0), rgba(255,165,0,0), rgba(255,165,0,0));
 }
+.col-grow-vertical.hero .card {
+  background          : #fff url("../../../images/network.png");
+  /*  height              : 309px;*/
+  background-repeat   : no-repeat;
+  background-position : center right;
+  background-size     : 50%;
+
+  @media only screen and (max-width : 1400px) {
+    background-size     : 50%;
+    background-position : center right;
+  }
+
+  @media only screen and (max-width : 510px) {
+    background-position-y : 120px;
+  }
+
+  @media #{$small-and-down} {
+    background-position-y : 131px;
+    background-size       : 100%;
+    background-position-x : 20px;
+  }
+
+  @media only screen and (min-width : 1400px) {
+    min-height          : 270px;
+    background-position : bottom right;
+  }
+}
+
+#content-bottom-2 {
+  img.img-circle {
+    width: 140px;
+
+    @media #{$small-and-down} {
+      width: 70px;
+    }
+  }
+
+  .col-sm-4 {
+    margin-bottom: 10px;
+  }
+
+  text-align : center;
+
+
+}
+
+.card h1 {
+  margin-top : 0;
+}
+
 .hero-unit {
 
   h1 {
-    font-size: 3em;
-    width: 50%;
+    width : 50%;
+    /*font-size: 3em;
     line-height: 4rem;
+*/
+    @media only screen and (min-width : 1400px) {
+      width : 100%;
+    }
+
+    @media #{$small-and-down} {
+      width : 100%;
+    }
   }
 
   p {
-    width: 50%;
+    width : 50%;
+    @media only screen and (min-width : 1400px) {
+      width : 100%;
+    }
+
+    @media #{$small-and-down} {
+      width : 100%;
+    }
+
+    @media only screen and (min-width : 1400px) {
+      width : 50%;
+    }
   }
 
   .btn {
-    margin-top: 35px;
+    margin-top : 35px;
   }
 }
 
-
 .col-grow-vertical.support .card {
-  background: #fff url("../../../images/support.png");
-  height: 309px;
-  background-position-x: 200px;
-  background-repeat: no-repeat;
-  background-size: 75%;
-  background-position-y: 49px;
+  background            : #fff url("../../../images/support.png");
+  /*  height                : 309px;*/
+  background-position-x : 180%;
+  background-repeat     : no-repeat;
+  background-size       : 66%;
+  background-position-y : 61px;
+
+  @media #{$medium-and-down} {
+    /* height                : 230px;
+     background-position-x : 90%;
+     background-size       : 37%;
+     background-position-y : center;*/
+    background-size       : 36%;
+    background-position-x : 90%;
+    background-position-y : 72%;
+  }
+
+  @media #{$medium-only} {
+
+  }
 
   .btn {
-    margin-top: 35px;
+    margin-top : 35px;
   }
 
   p {
-    width: 40%;
+    width : 80%;
+
+    @media #{$small-and-down} {
+      width : 50%;
+    }
   }
+
 }

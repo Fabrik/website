@@ -74,7 +74,7 @@
 					<h2>
 						Looking for Pro Joomla! support?
 					</h2>
-					<img src="images/support.png">
+					<img src="<?php echo $this->baseurl;?>/images/support.png">
 					<a class="btn" href="<?php echo JRoute::_('index.php?Itemid=160'); ?>">
 						Purchase hourly support from a Joomla! pro
 					</a>
@@ -83,7 +83,7 @@
 			<div class="col-sm-6">
 				<div class="card-panel">
 					<h2>Need a funky Fabrik plugin?</h2>
-					<img src="images/plugin.jpg" alt="Download Fabrik plugins">
+					<img src="<?php echo $this->baseurl;?>/images/plugin.png" alt="Download Fabrik plugins">
 					<a class="btn" href="<?php echo JRoute::_('index.php?Itemid=48'); ?>">
 						Browse over 100 plugins
 					</a>

@@ -1,5 +1,7 @@
 <body>
 <jdoc:include type="modules" name="banner-top" style="none" />
+
+</nav>
 <header>
 	<div class="container">
 		<nav class="block-wrapper">
@@ -11,6 +13,39 @@
 				<jdoc:include type="modules" name="position-2" />
 				<li>
 					<jdoc:include type="modules" name="top" style="none" />
+				</li>
+			</ul>
+			<a href="#" class="button-collapse" data-activates="side-menu"><i class="mdi-navigation-menu"></i></a>
+			<ul id="side-menu" class="side-nav">
+				<li class="item-27"><a href="/~fabrikar/features">Features</a></li>
+				<li class="item-48"><a href="/~fabrikar/download">Download</a></li>
+				<li class="item-31"><a href="/forums/">Forum</a></li>
+				<li class="item-160"><a href="/~fabrikar/support">Support</a></li>
+				<li class="item-35"><a href="/~fabrikar/blog">Blog</a></li>
+				<li class="item-22 dropdown parent">
+					<a href="#!" data-activates="parent22a" class="dropdown-button">
+						Help<i class="material-icons right">arrow_drop_down</i></a>
+					<ul class="dropdown-content active" id="parent22a">
+						<li class="item-32"><a href="http://fabrikar.com/forums/index.php?wiki/index/">Docs</a></li>
+						<li class="item-37"><a href="/~fabrikar/help/tutorials">Tutorials</a></li>
+						<li class="item-23"><a href="/~fabrikar/help/faq">FAQ</a></li>
+						<li class="item-33"><a href="/~fabrikar/help/terms-and-conditions">Terms &amp; conditions</a>
+						</li>
+					</ul>
+					<ul class="dropdown-content" id="parent22">
+						<li class="item-32"><a href="http://fabrikar.com/forums/index.php?wiki/index/">Docs</a></li>
+						<li class="item-37"><a href="/~fabrikar/help/tutorials">Tutorials</a></li>
+						<li class="item-23"><a href="/~fabrikar/help/faq">FAQ</a></li>
+						<li class="item-33"><a href="/~fabrikar/help/terms-and-conditions">Terms &amp; conditions</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="j2store_cart_module_124">
+				</li>
+
+				<li>
+					<a class="modal-trigger" href="#modal1">Login</a>
 				</li>
 			</ul>
 		</nav>
@@ -28,25 +63,30 @@
 				</div>
 			<?php endif; ?>
 
-			<?php if ($this->countModules('content-bottom')) : ?>
+			<?php if ($this->countModules('content-top')) : ?>
 				<div class="row">
-					<jdoc:include type="modules" name="content-top" style="material_card" />
-				</div>
-			<?php endif; ?>
-			<div class="row">
-				<div class="col-xs-12">
-					<jdoc:include type="component" />
-				</div>
-			</div>
-			<div class="row">
-				<jdoc:include type="modules" name="left" col="s6" style="material_card" />
-			</div>
-			<?php if ($this->countModules('content-bottom')) : ?>
-				<div class="row">
-					<jdoc:include type="modules" name="content-bottom" style="material_card" />
+					<jdoc:include type="modules" name="content-top" style="material_card" extractimage="0" />
 				</div>
 			<?php endif; ?>
 
+					<jdoc:include type="component" />
+
+			<?php if ($this->countModules('left')) : ?>
+				<div class="row">
+					<jdoc:include type="modules" name="left" col="s6" style="material_card" />
+				</div>
+			<?php endif; ?>
+
+			<?php if ($this->countModules('content-bottom')) : ?>
+				<div class="row" id="content-bottom">
+					<jdoc:include type="modules" name="content-bottom" style="material_card" />
+				</div>
+			<?php endif; ?>
+			<?php if ($this->countModules('content-bottom-2')) : ?>
+				<div class="row" id="content-bottom-2">
+					<jdoc:include type="modules" name="content-bottom-2" style="material_card" />
+				</div>
+			<?php endif; ?>
 		</section>
 	</div>
 </main>
@@ -57,7 +97,7 @@
 
 		<div class="row">
 
-			<div class="col-xs-3">
+			<div class="col-xs-3 hide-on-small-only">
 				<jdoc:include type="modules" name="footer1" style="bootstrap" />
 				<hr />
 
@@ -66,14 +106,14 @@
 					<img src="templates/fabrik4/images/navicat.png" alt="Navicat" />
 				</a>
 			</div>
-			<div class="col-xs-3">
+			<div class="col-sm-2 col-xs-6">
 				<jdoc:include type="modules" name="footer2" style="bootstrap" />
 			</div>
-			<div class="col-xs-3">
+			<div class="col-sm-2 col-xs-6">
 				<jdoc:include type="modules" name="footer3" style="bootstrap" />
 			</div>
-			<div class="col-xs-3">
-				<jdoc:include type="modules" name="footer4" style="bootstrap"/>
+			<div class="col-xs-5 hide-on-small-only">
+				<jdoc:include type="modules" name="footer4" style="bootstrap" />
 			</div>
 		</div>
 		<jdoc:include type="modules" name="debug" style="material_card" />

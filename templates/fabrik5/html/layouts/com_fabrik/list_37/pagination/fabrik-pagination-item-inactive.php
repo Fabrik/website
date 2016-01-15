@@ -29,6 +29,6 @@ switch ($item->key) :
 endswitch;
 
 ?>
-<a title="<?php echo $item->text; ?>" href="<?php echo $item->link; ?>" class="pagenav">
+<span class="pagenav">
 	<?php echo $text; ?>
-</a>
+</span>

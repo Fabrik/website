@@ -34,7 +34,7 @@ foreach ($images as $image) {
 $this->item->introtext = $doc->saveHTML();
 
 ?>
-<div class="card panel large">
+<div class="card item-<?php echo $this->c;?>">
 	<?php if ($titleImage !== '') :?>
 		<div class="card-image">
 			<?php echo $titleImage;?>

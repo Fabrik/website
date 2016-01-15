@@ -14,6 +14,9 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 JHtml::_('behavior.caption');
 $cols    = (int) $this->params->get('num_columns');
 $colSize = floor(12 / $cols);
+
+$smColSize = $colSize > 3 ? 6 : 12;
+
 ?>
 
 <div class="features<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="http://schema.org/Blog">
@@ -74,16 +77,20 @@ $colSize = floor(12 / $cols);
 	?>
 	<?php if (!empty($this->intro_items)) : ?>
 		<div class="row">
-	<?php foreach ($this->intro_items as $key => &$item) : ?>
+	<?php
+	$this->c = 0;
+	foreach ($this->intro_items as $key => &$item) : ?>
 
-		<div class="col col-xs-<?php echo $colSize;?>"
+		<div class="col-grow-vertical col-xs-12 col-sm-<?php echo $smColSize;?> col-md-<?php echo $colSize;?>"
 			itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 			<?php
 			$this->item = &$item;
 			echo $this->loadTemplate('item');
 			?>
 		</div>
-<?php endforeach; ?>
+<?php
+		$this->c ++;
+	endforeach; ?>
 		</div>
 <?php endif; ?>
 

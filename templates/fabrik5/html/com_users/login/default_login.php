@@ -11,6 +11,7 @@ defined('_JEXEC') or die;
 
 JHtml::_('behavior.keepalive');
 ?>
+<div class="card-panel">
 <div class="login<?php echo $this->pageclass_sfx ?>">
 	<?php if ($this->params->get('show_page_heading')) : ?>
 		<div class="page-header">
@@ -39,7 +40,7 @@ JHtml::_('behavior.keepalive');
 	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post" class="form-validate form-horizontal well">
 
 		<div class="row">
-			<div class="col s6" >
+			<div class="col-sm-6" >
 				<?php foreach ($this->form->getFieldset('credentials') as $field) : ?>
 					<?php if (!$field->hidden) : ?>
 						<div class="input-field">
@@ -65,7 +66,7 @@ JHtml::_('behavior.keepalive');
 				<?php endif; ?>
 
 			</div>
-			<div class="col s6" style="padding-top:65px">
+			<div class="col-sm-6" style="padding-top:65px">
 
 				<a href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>" class="modal-action waves-effect waves-red  btn-flat ">
 					<?php echo JText::_('COM_USERS_LOGIN_RESET'); ?></a><br>
@@ -92,4 +93,5 @@ JHtml::_('behavior.keepalive');
 		<input type="hidden" name="return" value="<?php echo base64_encode($this->params->get('login_redirect_url', $this->form->getValue('return'))); ?>" />
 		<?php echo JHtml::_('form.token'); ?>
 	</form>
+</div>
 </div>

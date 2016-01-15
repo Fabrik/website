@@ -17,26 +17,147 @@ article {
 }
 
 span.badge {
-  border-radius: 2px;
+  border-radius : 2px;
 }
 
 span.badge-secondary {
-  color: #fff;
-  background-color: $secondary-color;
+  color            : #fff;
+  background-color : $secondary-color;
 }
-
 
 /** Alert/Notification **/
 .alert {
-  background-color: $primary-color-dark;
-  color: #fff;
-  padding: 5px 10px;
+  background-color : $primary-color-dark;
+  color            : #fff;
+  padding          : 5px 10px;
 }
 
 h4.alert-heading {
-  display:none;
+  display : none;
 }
 
 .alert p {
-  margin: 0;
+  margin : 0;
+}
+
+/** Forms **/
+fieldset {
+  border : 0px;
+}
+
+input[readonly] {
+  color         : rgba(0, 0, 0, 0.26);
+  border-bottom : 1px dotted rgba(0, 0, 0, 0.26);
+}
+
+input.select-dropdown[readonly] {
+  color : $text-main;
+}
+
+.hidden {
+  display : none;
+}
+
+.label  {
+  border-radius: 2px;
+  padding: 2px 5px;
+}
+
+.label-inverse {
+  background-color: darken($chip-bg-color, 10%);
+}
+
+
+.form-actions {
+  margin-top : 20px;
+}
+
+.control-group .controls{
+  margin-top: 30px;
+}
+
+.fabrikButtonsContainer {
+  margin-bottom: 10px;
+}
+
+table .fabrik_select {
+  display: none;
+}
+
+
+table th.fabrik_actions {
+  display: none;
+}
+
+.hover-menu {
+
+  width: 200px;
+  position: absolute;
+  margin-left: -100px;
+  margin-top: -10px;
+
+  a {
+    padding: 0 5px;
+    font-size: 1.2rem;
+    color: color("grey", "darken-1");
+  }
+
+  a:hover {
+    color: $secondary-color;
+    color: color("grey", "darken-2");
+  }
+
+}
+
+.img-circle {
+  border-radius : 50%;
+}
+
+.fabrikForm {
+  label i {
+    float: right;
+    font-size: 0.8em;
+    color: $error-color;
+    margin-left: 4px;
+  }
+
+  label.tooltipped {
+    border-bottom: 1px dotted #bbb;
+  }
+
+  legend {
+    font-size: 1.6em;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+
+.collection .title {
+  font-size: 1.1em;
+}
+
+p.floating-info {
+  background: rgba(255,255,255,0.7);
+  border-radius: 25px;
+  padding: 15px;
+  min-height: 90px;
+
+  img {
+    float: left;
+    width: 65px;
+  }
+}
+
+/** contact us **/
+
+#group58 .groupintro {
+  background            : #fff url("../../../images/contact-us.png");
+  background-position-x : 0;
+  min-height            : 150px;
+  background-repeat     : no-repeat;
+  padding-left          : 170px;
+  line-height           : 2.6em;
+  background-size       : 140px;
+  padding-right         : 20%;
 }

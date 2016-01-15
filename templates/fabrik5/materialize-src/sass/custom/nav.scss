@@ -1,67 +1,79 @@
-
 /** Top menu **/
 
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-  line-height :90px;
+  line-height : 90px;
 }
+
 nav .strapline {
   position  : absolute;
   top       : 17px;
   font-size : 0.4em;
   left      : 90px;
-  display : none;
+  display   : none;
 }
 
-.logout-button .btn{
-  background-color:#fff;
-  color: $secondary-color;
+.logout-button .btn {
+  background-color : #fff;
+  color            : $secondary-color;
 }
 
 .brand-logo img {
   height : 69px;
   margin : 10px 0 0 10px;
+
+  @media #{$large-and-down} {
+    height : 61px;
+  }
+
+  @media #{$small-and-down} {
+    height: 44px;
+  }
+}
+
+a.button-collapse {
+  margin-left: 10px;
 }
 
 nav {
   span.badge {
-    background-color: #fff;
-    color: $secondary-color;
+    background-color : #fff;
+    color            : $secondary-color;
   }
 
   a i.material-icons {
-    padding-left: 0;
-    margin-left: 3px;
-    font-size: 1rem;
+    padding-left : 0;
+    margin-left  : 3px;
+    font-size    : 1rem;
   }
 
   .j2store-cart-item-box {
-    color: $text-main;
+    color : $text-main;
   }
 
 }
 
 #mini-cart.dropdown-content li:hover {
-  background-color: #fff;
+  background-color : #fff;
 }
 
 #mini-cart {
-  width: 200px !important;
+  width : 200px !important;
 
   .item-info {
-    padding: 15px;
+    padding : 15px;
   }
 
   li {
-    cursor: default;
+    cursor : default;
   }
   a.btn {
-    color: #fff;
-    margin-top: 8px;
-    padding-top: 8px;
+    color       : #fff;
+    margin-top  : 8px;
+    padding-top : 8px;
   }
 
   a.btn-flat {
-    color: $text-main;
+    color : $text-main;
   }
 
 }

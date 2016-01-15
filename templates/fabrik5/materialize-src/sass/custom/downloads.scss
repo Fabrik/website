@@ -1,30 +1,41 @@
-
 /** Downloads **/
 
 .fabrikFilterContainer label {
-  position  : absolute;
+  /*position  : absolute;
   top       : -14px;
-  font-size : 0.8rem;
+  font-size : 0.8rem;*/
 }
 
 .fabrikTable {
   .j2store-addtocart-form {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    position : absolute;
+    bottom   : 20px;
+    right    : 20px;
   }
 
   .j2store-product {
-    margin-top: 10px;
+    margin-top : 10px;
   }
   .product-price-container {
-    font-size: 1.3rem;
-    height: 3rem;
+    font-size : 1.3rem;
+    height    : 3rem;
 
     .sale-price {
-      position: absolute;
-      bottom: 20px;
-      margin-top: 100px;
+      position   : absolute;
+      bottom     : 20px;
+      margin-top : 100px;
     }
+  }
+}
+
+.pagination li {
+  @media #{$medium-and-down} {
+    padding : 0;
+  }
+}
+
+.pagination li i {
+  @media #{$medium-and-down} {
+    font-size : 1.5em;
   }
 }
